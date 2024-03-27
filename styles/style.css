@@ -1,0 +1,76 @@
+/* shared styles */
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+/* :root{
+    --discription color : #3A3A3A ;
+    --primary-color: #3A3A3A;
+    --font-family: 600;
+} */
+.primary-color{
+    color: #3A3A3A;
+}
+
+  
+
+/* header styles */
+.header-container{
+    margin: auto 120px;
+    width: 100% calc(100% - 120px );
+   
+
+}
+.header-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+nav ul li, a{
+    color: #3A3A3A;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+}
+/* banner style */
+.banner-title{
+    font-size: 3.3rem;
+}
+.discription{
+    font-size: 16;
+    font-weight: 600;
+}
+.banner-content{
+    padding-right: 600px;
+    padding-top: 80px;
+}
+.banner{
+   align-items: center;
+   margin: 250px 0;
+   background-image: url(../images/main-camera.png), url(../images/Circle\ design.svg);
+   background-repeat: no-repeat;
+   background-position:top right;
+   height: 500px;
+  
+}
+.primary-btn{
+    color: white;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: 0;
+}
+.primary-btn button, img{
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
