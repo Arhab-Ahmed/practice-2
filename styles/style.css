@@ -29,6 +29,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 90px;
 }
 nav ul {
     display: flex;
@@ -49,17 +50,20 @@ nav ul li, a{
     font-weight: 600;
 }
 .banner-content{
-    padding-right: 600px;
-    padding-top: 80px;
+    padding-right: 60px;
+    padding-top: 60px;
 }
 .banner{
+    display: flex;
+    gap: 60px;
    align-items: center;
-   margin: 250px 0;
-   background-image: url(../images/main-camera.png), url(../images/Circle\ design.svg);
-   background-repeat: no-repeat;
-   background-position:top right;
+   margin: 200px 0;
    height: 500px;
-  
+}
+.banner-img{
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .primary-btn{
     color: white;
@@ -73,4 +77,32 @@ nav ul li, a{
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+/* banner sponnser */
+.sponser{
+    border: 1px solid lightgrey;
+    margin: auto 100px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+.sponser img{
+    padding-right: 50px;
+}
+/* mobaile */
+@media screen and (max-width: 576px) {
+    .header-container{
+        margin: 0;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    .banner {
+        padding-top: 800px;
+    }
+
 }
