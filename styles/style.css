@@ -42,6 +42,13 @@ nav ul li, a{
     font-weight: 600;
 }
 /* banner style */
+.banner{
+    display: flex;
+    gap: 60px;
+   align-items: center;
+   margin: 200px 0;
+   height: 500px;
+}
 .banner-title{
     font-size: 3.3rem;
 }
@@ -50,21 +57,19 @@ nav ul li, a{
     font-weight: 600;
 }
 .banner-content{
-    padding-right: 60px;
     padding-top: 60px;
 }
-.banner{
-    display: flex;
-    gap: 60px;
-   align-items: center;
-   margin: 200px 0;
-   height: 500px;
-}
+
 .banner-img{
     background-image: url("../images/Circle\ design.svg");
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: right;
-}
+    text-align: right;
+    padding-top: 40px;
+} 
+
 .primary-btn{
     color: white;
     font-weight: 700;
@@ -80,29 +85,67 @@ nav ul li, a{
 }
 /* banner sponnser */
 .sponser{
-    border: 1px solid lightgrey;
     margin: auto 100px;
+    border: 0.5px solid lightgrey;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px; 
+   
 }
 .sponser img{
-    padding-right: 50px;
+    padding: 20px 25px;
 }
 /* mobaile */
 @media screen and (max-width: 576px) {
-    .header-container{
-        margin: 0;
+   .header-container,
+    .sponser{
+        margin: 0 10px;
     }
     nav{
         flex-direction: column;
     }
+    nav ul{
+        gap: 15px;
+    }
     .banner{
         flex-direction: column-reverse;
-        margin: 0;
+        margin: 0 ;
+        padding-top: 400px;     
     }
-    .banner {
-        padding-top: 800px;
+    .banner-img{
+        background-position: center;
     }
+    .banner-title{
+        font-size: 1.7rem;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .sponser img{
+        padding: 5px 5px;
+        width: 50px;
+    }
+   
 
 }
+/* itab */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .header-container,
+    .sponser{
+        margin: 0 10px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding-top: 400px;
+        text-align: center;
+    }
+    .banner-img{
+        text-align: center;
+        background-position: center;
+    }
+    .sponser img{
+        padding: 5px 5px;
+        width: 15%;
+    }
+       
+    }
+   
