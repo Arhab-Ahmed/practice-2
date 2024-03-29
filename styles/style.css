@@ -272,7 +272,7 @@ footer p{
         grid-template-columns: repeat(1, 1fr);
     }
     .option{
-        padding-left: 500px;
+        padding-left: 510px;
      }
      .feature{
         flex-direction: column-reverse;
